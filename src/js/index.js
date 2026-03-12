@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		try {
 
 			// Faz uma requisição POST para o webhook do n8n
-			const response = await fetch("http://localhost:5678/webhook/Fundo-Magico", {
+			const response = await fetch("http://localhost:5678/webhook/gerador-fundo", {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",
