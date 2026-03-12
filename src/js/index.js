@@ -27,7 +27,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		try {
 
 			// Faz uma requisição POST para o webhook do n8n
-			const response = await fetch("http://localhost:5678/webhook/gerador-fundo", {
+			const response = await fetch("https://lfs7.app.n8n.cloud/webhook/gerador-fundo", {
 				method: "POST",
 				headers: {
 					"Content-Type": "application/json",
