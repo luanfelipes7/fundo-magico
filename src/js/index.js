@@ -12,6 +12,15 @@ document.addEventListener("DOMContentLoaded", function () {
 	form.addEventListener("submit", async function (event) {
 		event.preventDefault(); // Previne o comportamento padrão de recarregar a página
 
+		function setLoading(isLoading) {
+			const button = document.getElementById("btn-text");
+
+			if (isLoading) {
+				button.innerHTML = "Gerando Background...";
+			} else {
+				button.innerHTML = "Gerar Background Mágico";
+			}
+		}
 
 		// Obtém e limpa o valor do input de descrição
 		const description = input.value.trim();
@@ -30,7 +39,7 @@ document.addEventListener("DOMContentLoaded", function () {
 			const response = await fetch("https://lfs7.app.n8n.cloud/webhook/gerador-fundo", {
 				method: "POST",
 				headers: {
-					"Content-Type": "application/json",
+					"Content-Type": "application/json"
 				},
 				body: JSON.stringify({ description }), // Envia a descrição no corpo da requisição
 			});
@@ -81,16 +90,16 @@ document.addEventListener("DOMContentLoaded", function () {
 
 			// Se houver CSS retornado, cria e aplica uma nova tag de estilo
 			if (data.style) {
-				
+
 				styleTag = document.createElement("style");
 
-				
+
 				styleTag.id = "dynamic-style";
 
-				
+
 				styleTag.textContent = data.style;
 
-				
+
 				document.head.appendChild(styleTag);
 			}
 		} catch (error) {
@@ -105,15 +114,7 @@ document.addEventListener("DOMContentLoaded", function () {
 		}
 	});
 
-	
-	// Função auxiliar para alternar o texto do botão durante o carregamento
-	function setLoading(isLoading) {
-		const button = document.getElementById("btn-text");
 
-		if (isLoading) {
-			button.innerHTML = "Gerando Background...";
-		} else {
-			button.innerHTML = "Gerar Background Mágico";
-		}
-	}
+	// Função auxiliar para alternar o texto do botão durante o carregamento
+
 });
