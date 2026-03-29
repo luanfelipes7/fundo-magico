@@ -2,8 +2,6 @@
 
 O **Fundo Mágico** é uma ferramenta interativa que utiliza Inteligência Artificial para transformar descrições em texto em backgrounds incríveis e prontos para uso em projetos web. Basta descrever o que você imagina e a mágica acontece: o sistema gera o HTML, o CSS e uma prévia em tempo real.
 
-![Preview do Projeto](./src/images/bg.JPG)
-
 ## 🚀 Funcionalidades
 
 - **Geração por IA:** Utilize processamento de linguagem natural para criar designs exclusivos.
@@ -37,7 +35,7 @@ O **Fundo Mágico** é uma ferramenta interativa que utiliza Inteligência Artif
 
 1. Clone este repositório:
    ```bash
-   git clone https://github.com/seu-usuario/fundo-magico.git
+   git clone https://github.com/luanfelipes7/fundo-magico.git
    ```
 2. Abra o arquivo `index.html` em seu navegador.
 3. Digite uma descrição no campo de texto (ex: "Um gradiente aurora boreal com tons de roxo e verde").
@@ -54,10 +52,6 @@ O projeto envia uma requisição `POST` para um endpoint do n8n que processa a d
   "style": ".seu-bg { ... }"
 }
 ```
-
-## 📄 Licença
-
-Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
 
 ---
 Desenvolvido com 💜 por [Luan Felipe](https://github.com/luanfelipes7)
