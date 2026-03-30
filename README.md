@@ -55,3 +55,4 @@ O projeto envia uma requisição `POST` para um endpoint do n8n que processa a d
 
 ---
 Desenvolvido com 💜 por [Luan Felipe](https://github.com/luanfelipes7)
+Com auxílio Dev em Dobro fornecendo o conhecimento.
